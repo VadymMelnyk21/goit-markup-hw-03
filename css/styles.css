@@ -37,7 +37,7 @@ body {
 }
 
 
-/* global style */
+/* ----- global style ----- */
 
 
 .nav-link.current {
@@ -67,7 +67,7 @@ body {
 }
 
 
-/* header */
+/* ----- header ----- */
 
 /* logo */
 .heder {
@@ -128,36 +128,43 @@ body {
 }
 
 
-/* studia */
+/* ----- studia ----- */
 
 /* content main */
 
 .hero {
     background-color: var(--basic-dark-color);
+    text-align: center;
 }
 
 .hero-title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.5;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--basic-white-color);
 }
 
 .hero-button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+
+    cursor: pointer;
+    border: transparent;
+
+    background-color: var(--accent-color);
+    color: var(--basic-white-color);
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    background-color: var(--accent-color);
-    color: var(--basic-white-color);
-    cursor: pointer;
-    border: transparent;
-    padding: 10px 32px;
-    border-radius: 4px;
+    text-align: center;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -173,17 +180,46 @@ line-height: 1.17;
 color: var(--title-text-color);
 }
 
-.benefits,
-.doing,
-.team {
-    list-style: none;
+
+/* benefits */
+
+.benefits-list {
+    display: flex;
+    width: 1200px;
+    align-items: flex-start;
+    padding: 94px 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    outline: 1px solid tomato;
+}
+.benefits-list: {
+    
+}
+
+.benefits-item {
+    outline: 1px solid tomato;
+}
+
+.benefits-item:not(:last-child) {
+    margin-right: 30px;
+
 }
 
 .benefits-title {
+    margin-top: 0px;
+    margin-bottom: 10px;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--title-text-color);
 }
+.benefits-text {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* team */
+
 .team {
     font-size: 16px;
     line-height: 1.18;
@@ -194,7 +230,7 @@ color: var(--title-text-color);
 }
 
 
-/* portfolio */
+/* ----- portfolio ----- */
 
 .portfolio-objects {
     width: 1200px;
@@ -284,7 +320,7 @@ color: var(--title-text-color);
 }
 
 
-/* footer style */
+/* ----- footer style ----- */
 
 .page-footer{
     background-color: var(--basic-dark-color);
