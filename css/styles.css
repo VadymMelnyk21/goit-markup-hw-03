@@ -340,7 +340,7 @@ img {
 .filter{
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .filter-item:not(:last-child) {
     margin-right: 8px;
@@ -380,22 +380,18 @@ img {
 .projects-item {
     width: 370px;
     margin: 15px;
-    outline: 1px solid tomato;
+    border: 1px solid #EEEEEE;
 }
 
-/* .project-link {
-    
-} */
-
-.img-portfolio {
-    margin-bottom: 20px;
-    display: block;
+.projects-text {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
 }
 
 .title-portfolio {
     margin-top: 0;
     margin-bottom: 4px;
-    margin-left: 24px;
 
     font-weight: 700;
     font-size: 18px;
@@ -406,8 +402,7 @@ img {
 
 .text-portfolio {
     margin-top: 0;
-    margin-bottom: 20px;
-    margin-left: 24px;
+    margin-bottom: 0;
 
     font-size: 16px;
     line-height: 1.87;
