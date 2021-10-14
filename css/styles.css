@@ -440,12 +440,6 @@ img {
     font-style: normal;
 }
 
-.contacts-menu {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-}
-
 .contacts-link-map{
     color: var(--basic-white-color);
 }
