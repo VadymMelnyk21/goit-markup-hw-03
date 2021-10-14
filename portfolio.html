@@ -11,8 +11,12 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
+
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" 
+          integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" 
     />
 
     <link rel="stylesheet" href="./css/styles.css" 
@@ -37,12 +41,12 @@
       </nav>
       <ul class="contacts-nav list">
         <li class="nav-item">
-          <a href="mailto:info@devstudio.com" class="contacts-link link"
+          <a href="mailto:info@devstudio.com" class="nav-link contacts-color link"
             >info@devstudio.com</a
           >
         </li>
         <li class="nav-item">
-          <a href="tel:+380961111111" class="contacts-link link"
+          <a href="tel:+380961111111" class="nav-link contacts-color link"
             >+38 096 111 11 11</a
           >
         </li>
@@ -71,11 +75,12 @@
           </li>
         </ul>
         <ul class="projects list">
-          <li>
-            <a href="" class="link">
+          <li class="projects-item">
+            <a href="" class="project-link link">
             <img
               src="./img/portfolio/tehnokrak.jpg"
               alt="Технокряк"
+              class="img-portfolio"
               width="370"
               height="294"
             />
@@ -83,11 +88,12 @@
             <p class="text-portfolio">Веб-сайт</p>
           </a>
           </li>
-          <li>
-            <a href="" class="link">
+          <li class="projects-item">
+            <a href="" class="project-link link">
             <img
               src="./img/portfolio/poster-new-orlean.jpg"
               alt="Постер"
+              class="img-portfolio"
               width="370"
               height="294"
             />
@@ -95,11 +101,12 @@
             <p class="text-portfolio">Дизайн</p>
             </a>
           </li>
-          <li>
-            <a href="" class="link">
+          <li class="projects-item">
+            <a href="" class="project-link link">
             <img
               src="./img/portfolio/restoran-seafood.jpg"
               alt="Ресторан"
+              class="img-portfolio"
               width="370"
               height="294"
             />
@@ -107,11 +114,12 @@
             <p class="text-portfolio">Приложение</p>
             </a>
           </li>
-          <li>
-            <a href="" class="link">
+          <li class="projects-item">
+            <a href="" class="project-link link">
             <img
               src="./img/portfolio/project-prime.jpg"
               alt="Наушники"
+              class="img-portfolio"
               width="370"
               height="294"
             />
@@ -119,11 +127,12 @@
             <p class="text-portfolio">Маркетинг</p>
             </a>
           </li>
-          <li>
-            <a href="" class="link">
+          <li class="projects-item">
+            <a href="" class="project-link link">
             <img
               src="./img/portfolio/project-boxes.jpg"
               alt="Коробки"
+              class="img-portfolio"
               width="370"
               height="294"
             />
@@ -131,11 +140,12 @@
             <p class="text-portfolio">Приложение</p>
             </a>
           </li>
-          <li>
-            <a href="" class="link">
+          <li class="projects-item">
+            <a href="" class="project-link link">
             <img
               src="./img/portfolio/inspiration.jpg"
               alt="Вдохновения без границ"
+              class="img-portfolio"
               width="370"
               height="294"
             />
@@ -143,11 +153,12 @@
             <p class="text-portfolio">Веб-сайт</p>
             </a>
           </li>
-          <li>
-            <a href="" class="link">
+          <li class="projects-item">
+            <a href="" class="project-link link">
             <img
               src="./img/portfolio/izdanie-limitet.jpg"
               alt="Лимитированое издание"
+              class="img-portfolio"
               width="370"
               height="294"
             />
@@ -155,11 +166,12 @@
             <p class="text-portfolio">Дизайн</p>
             </a>
           </li>
-          <li>
-            <a href="" class="link">
+          <li class="projects-item">
+            <a href="" class="project-link link">
             <img
               src="./img/portfolio/project-lab.jpg"
               alt="Проект Лаб"
+              class="img-portfolio"
               width="370"
               height="294"
             />
@@ -167,11 +179,12 @@
             <p class="text-portfolio">Маркетинг</p>
             </a>
           </li>
-          <li>
-            <a href="" class="link">
+          <li class="projects-item">
+            <a href="" class="project-link link">
             <img
               src="./img/portfolio/growing-business.jpg"
               alt="Растущий бизнес"
+              class="img-portfolio"
               width="370"
               height="294"
             />
@@ -185,29 +198,29 @@
     </main>
     <footer class="page-footer">
       <div class="footer-menu">
-      <a href="./index.html" class="logo link"
-        >Web<span class="accent-logo-footer">Studio</span></a
-      >
-      <address class="contacts">
-        <ul class="contacts-menu list">
-          <li class="contacts-item">
-            <a href="" class="contacts-link-map link"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li class="contacts-item">
-            <a href="mailto:info@example.com" class="contacts-link-f link"
-              >info@example.com</a
-            >
-          </li>
-          <li class="contacts-item">
-            <a href="tel:+380961111111" class="contacts-link-f link"
-              >+38 099 111 11 11</a
-            >
-          </li>
-        </ul>
-      </address>
-    </div>
+        <a href="./index.html" class="logo link"
+          >Web<span class="accent-logo-footer">Studio</span></a
+        >
+        <address class="contacts">
+          <ul class="contacts-menu list">
+            <li class="contacts-item">
+              <a href="" class="contacts-link-map link"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a href="mailto:info@example.com" class="contacts-link-f link"
+                >info@example.com</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a href="tel:+380961111111" class="contacts-link-f link"
+                >+38 099 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>

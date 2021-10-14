@@ -28,8 +28,6 @@ body {
 
 .nav-link:hover,
 .nav-link:focus,
-.contacts-link:hover,
-.contacts-link:focus,
 
 .contacts-link-map:hover,
 .contacts-link-map:focus,
@@ -37,6 +35,7 @@ body {
 .contacts-link-f:focus {
     color: var(--accent-color);
 }
+
 
 /* global style */
 
@@ -100,9 +99,11 @@ body {
 }
 
 /* nav */
+
 .site-nav {
     display: flex;
 }
+
 .nav-item + .nav-item {
     margin-left: 50px;
 }
@@ -122,17 +123,9 @@ body {
     color: var(--title-text-color);
 }
 
-.contacts-link {
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    
-    font-weight: 500;
-    letter-spacing: 0.02em;
+.contacts-color {
     color: var(--primary-text-color);
 }
-
-
 
 
 /* studia */
@@ -201,16 +194,22 @@ color: var(--title-text-color);
 }
 
 
-
-
-
 /* portfolio */
+
+.portfolio-objects {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 94px 15px;
+}
+
 
 /* button filter */
 
 .filter{
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 .filter-item:not(:last-child) {
     margin-right: 8px;
@@ -239,25 +238,33 @@ color: var(--title-text-color);
 }
 
 
-
-
-
 /* projects */
-.portfolio-objects {
-    width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-}
 
 .projects {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
+}
 
+.projects-item {
+    width: 370px;
+    margin: 15px;
+    outline: 1px solid tomato;
+}
+
+/* .project-link {
+    
+} */
+
+.img-portfolio {
+    margin-bottom: 20px;
+    display: block;
 }
 
 .title-portfolio {
+    margin-top: 0px;
+    margin-bottom: 4px;
+    margin-left: 24px;
 
     font-weight: 700;
     font-size: 18px;
@@ -267,6 +274,10 @@ color: var(--title-text-color);
 }
 
 .text-portfolio {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 24px;
+
     font-size: 16px;
     line-height: 1.87;
     color: var(--primary-text-color);
@@ -278,36 +289,41 @@ color: var(--title-text-color);
 .page-footer{
     background-color: var(--basic-dark-color);
 }
+
 .footer-menu {
     width: 1200px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
     padding-left: 15px;
 }
+
 .footer-menu .logo {
     display: inline-block;
     margin-right: 0px;
     margin-bottom: 20px;
 }
+
 .accent-logo-footer {
     color: var(--basic-white-color);
 }
+
 .contacts {
     font-style: normal;
 }
+
 .contacts-menu {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
 }
-/* .contacts-link-map,
-.contacts-link-f {
 
-} */
 .contacts-link-map{
     color: var(--basic-white-color);
 }
+
 .contacts-link-f {
     color: rgba(255, 255, 255, 0.6);
 }
