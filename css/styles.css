@@ -39,6 +39,18 @@ body {
 
 /* ----- global style ----- */
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.container {
+    width: 1200px;
+    padding-left:  15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 .nav-link.current {
     color: var(--accent-color);
@@ -65,15 +77,22 @@ body {
     margin: 0;
     list-style: none;
 }
+
 img {
     display: block;
     max-width: 100%;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 
 /* ----- header ----- */
 
 /* logo */
+
 .heder {
     border-bottom: 1px solid #ECECEC;
 }
@@ -194,17 +213,7 @@ img {
 /* benefits */
 
 .benefits {
-    padding-top: 94px;
     padding-bottom: 47px;
-}
-
-.benefits-content {
-    width: 1200px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    /* outline: 1px solid tomato; */
 }
 
 .benefits-list {
@@ -237,14 +246,6 @@ img {
 
 .doing {
     padding-top: 47px;
-    padding-bottom: 94px;
-}
-
-.doing-content {
-    width: 1200px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin: 0 auto;
 }
 
 .doing-list {
@@ -264,16 +265,7 @@ img {
 /* team */
 
 .team {
-    padding-top: 94px;
-    padding-bottom: 94px;
     background-color: #F5F4FA;
-}
-
-.team-section {
-    width: 1200px;
-    padding: 0 15px;
-    margin-right: auto;
-    margin-left: auto;
 }
 
 .team-list {
@@ -293,6 +285,7 @@ img {
     background-color: #fff;
     border-radius: 0 0 4px 4px;
 }
+
 .team-item:nth-child(4n) {
     margin-right: 0px;
 }
@@ -312,28 +305,9 @@ img {
     font-weight: 500;
     color: var(--title-text-color);
 }
-.team-text {
-    margin-top: 0;
-    margin-bottom: 0;
-
-}
 
 
 /* ----- portfolio ----- */
-
-.portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-.portfolio-objects {
-    width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left:  15px;
-    padding-right: 15px;
-}
-
 
 /* button filter */
 
@@ -380,7 +354,7 @@ img {
 .projects-item {
     width: 370px;
     margin: 15px;
-    border: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .projects-text {
@@ -401,9 +375,6 @@ img {
 }
 
 .text-portfolio {
-    margin-top: 0;
-    margin-bottom: 0;
-
     font-size: 16px;
     line-height: 1.87;
     color: var(--primary-text-color);
