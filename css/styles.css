@@ -68,11 +68,11 @@ body {
     clip: rect(0 0 0 0)
   }
 
-.link {
+a {
     text-decoration: none;
 }
 
-.list {
+ul {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -81,9 +81,10 @@ body {
 img {
     display: block;
     max-width: 100%;
+    height: auto;
 }
 
-p {
+h1, h2, h3, p {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -93,19 +94,13 @@ p {
 
 /* logo */
 
-.heder {
+.header {
     border-bottom: 1px solid #ECECEC;
 }
 
-.heder-menu {
+.header-menu {
     display: flex;
     align-items: center;
-    width: 1200px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    /* outline: 2px solid tomato; */
 }
 
 .logo {
@@ -113,8 +108,9 @@ p {
 
     color: var(--accent-color);
     font-family: Raleway, sans-serif;
-    font-size: 26px;
     font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
 }
 
 .accent-logo {
@@ -143,6 +139,7 @@ p {
 
     font-weight: 500;
     letter-spacing: 0.02em;
+    line-height: 1.14;
     color: var(--title-text-color);
 }
 
@@ -199,7 +196,6 @@ p {
 
 
 .title-second {
-    margin-top: 0;
     margin-bottom: 50px;
     text-align: center;
 
@@ -212,53 +208,40 @@ p {
 
 /* benefits */
 
-.benefits {
-    padding-bottom: 47px;
-}
-
 .benefits-list {
     display: flex;
-    align-items: flex-start;
     margin-left: -30px;
-
 }
 
 .benefits-item {
     flex-basis: calc(100% * 4 - 30px);
     margin-left: 30px;
-    /* outline: 1px solid tomato; */
 }
 
 .benefits-title {
-    margin-top: 0;
     margin-bottom: 10px;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--title-text-color);
-}
-.benefits-text {
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 
 /* doing */
 
 .doing {
-    padding-top: 47px;
+    padding-top: 0px;
 }
 
 .doing-list {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
-    margin-bottom: -30px;
 }
 
 .doing-item {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
-    margin-bottom: 30px;
 }
 
 
@@ -277,29 +260,27 @@ p {
 }
 
 .team-item {
-    flex-basis: 270px;
-    padding-bottom: 30px;
     margin-right: 30px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 0 0 4px 4px;
 }
 
 .team-item:nth-child(4n) {
     margin-right: 0px;
 }
-.team-item:nth-last-child(-n + 4) {
+/* .team-item:nth-last-child(-n + 4) {
     margin-bottom: 0;
-}
+} */
 
 .team-text-conteiner {
     padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
 }
 
 .team-title {
-    margin-top: 0;
     margin-bottom: 10px;
 
     font-weight: 500;
@@ -345,26 +326,25 @@ p {
 
 /* projects */
 
-.projects {
+.projects-list {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
 }
 
 .projects-item {
-    width: 370px;
+    flex-basis: calc(100% / 3 - 30px);
     margin: 15px;
-    border-bottom: 1px solid #EEEEEE;
 }
 
 .projects-text {
-    padding-top: 20px;
-    padding-left: 24px;
-    padding-bottom: 20px;
+    padding: 20px 24px;
+    border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
 }
 
 .title-portfolio {
-    margin-top: 0;
     margin-bottom: 4px;
 
     font-weight: 700;
@@ -389,15 +369,7 @@ p {
     background-color: var(--basic-dark-color);
 }
 
-.footer-menu {
-    width: 1200px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.footer-menu .logo {
+.footer-logo {
     display: inline-block;
     margin-right: 0;
     margin-bottom: 20px;
@@ -409,6 +381,10 @@ p {
 
 .contacts {
     font-style: normal;
+}
+
+.contacts-item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .contacts-link-map{
